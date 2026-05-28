@@ -1,0 +1,498 @@
+# CBN'S POULTRY WEBSITE HTML CODE
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBN'S POULTRY</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+header{
+background:#fff;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#0b6623;
+}
+
+.logo span{
+color:#ffcc00;
+}
+
+.contact-top{
+display:flex;
+gap:30px;
+font-weight:bold;
+}
+
+.contact-top i{
+color:#0b6623;
+margin-right:8px;
+}
+
+nav{
+background:#0b6623;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+nav .links a{
+color:white;
+text-decoration:none;
+margin-right:20px;
+font-weight:bold;
+}
+
+.whatsapp-btn{
+background:#ffcc00;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1600&auto=format&fit=crop') center/cover;
+position:relative;
+display:flex;
+align-items:center;
+padding:0 5%;
+color:white;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+left:0;
+top:0;
+}
+
+.hero-content{
+position:relative;
+max-width:650px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+margin-right:15px;
+}
+
+.green-btn{
+background:#25D366;
+color:white;
+}
+
+.white-btn{
+border:2px solid white;
+color:white;
+}
+
+section{
+padding:80px 5%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:42px;
+color:#0b6623;
+margin-bottom:10px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-content{
+padding:25px;
+}
+
+.product-content h3{
+font-size:28px;
+margin-bottom:15px;
+color:#0b6623;
+}
+
+.price{
+font-size:35px;
+font-weight:bold;
+color:#0b6623;
+margin:20px 0;
+}
+
+.order-btn{
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+font-weight:bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feature-box i{
+font-size:45px;
+color:#0b6623;
+margin-bottom:20px;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.review-card h4{
+margin-top:20px;
+color:#0b6623;
+}
+
+.contact{
+background:#0b6623;
+color:white;
+text-align:center;
+}
+
+.socials a{
+color:white;
+font-size:28px;
+margin:0 10px;
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.float-whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">CBN'S <span>POULTRY</span></div>
+
+<div class="contact-top">
+<div><i class="fa-solid fa-phone"></i> +265 883 689 015</div>
+<div><i class="fa-brands fa-whatsapp"></i> WhatsApp Orders</div>
+</div>
+</header>
+
+<nav>
+<div class="links">
+<a href="#">HOME</a>
+<a href="#products">PRODUCTS</a>
+<a href="#gallery">GALLERY</a>
+<a href="#reviews">REVIEWS</a>
+<a href="#contact">CONTACT</a>
+</div>
+
+<a href="https://wa.me/265883689015" class="whatsapp-btn">
+<i class="fa-brands fa-whatsapp"></i> ORDER NOW
+</a>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Quality Broiler Chicken Delivered With Care</h1>
+
+<p>
+We raise healthy broiler chickens with the best care,
+quality feed, and modern farming techniques.
+</p>
+
+<a href="https://wa.me/265883689015" class="btn green-btn">
+<i class="fa-brands fa-whatsapp"></i> ORDER ON WHATSAPP
+</a>
+
+<a href="#products" class="btn white-btn">
+VIEW PRODUCTS
+</a>
+</div>
+</section>
+
+<section id="products">
+<div class="section-title">
+<h2>OUR PRODUCTS & PRICING</h2>
+</div>
+
+<div class="products">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop">
+
+<div class="product-content">
+<h3>Live Broiler Chicken</h3>
+<p>Healthy live broiler chicken ready for your needs.</p>
+<div class="price">MWK 21,000</div>
+
+<a href="https://wa.me/265883689015" class="order-btn">
+ORDER NOW
+</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1563281578-86218283be53?q=80&w=1200&auto=format&fit=crop">
+
+<div class="product-content">
+<h3>Fresh Dressed Chicken</h3>
+<p>Clean and hygienically dressed chicken.</p>
+<div class="price">MWK 23,000</div>
+
+<a href="https://wa.me/265883689015" class="order-btn">
+ORDER NOW
+</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200&auto=format&fit=crop">
+
+<div class="product-content">
+<h3>Bulk Broiler Orders</h3>
+<p>Perfect for restaurants and events.</p>
+<div class="price">MWK 20,000</div>
+
+<a href="https://wa.me/265883689015" class="order-btn">
+ORDER NOW
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<div class="section-title">
+<h2>OUR FARM GALLERY</h2>
+</div>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop">
+</div>
+</section>
+
+<section>
+<div class="section-title">
+<h2>WHY CHOOSE CBN'S POULTRY?</h2>
+</div>
+
+<div class="features">
+
+<div class="feature-box">
+<i class="fa-solid fa-shield"></i>
+<h3>Healthy Broilers</h3>
+<p>We raise healthy chickens with quality feed.</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-leaf"></i>
+<h3>Clean Environment</h3>
+<p>Our poultry farm is clean and hygienic.</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-truck"></i>
+<h3>Fast Delivery</h3>
+<p>Reliable and quick delivery services.</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-headset"></i>
+<h3>Customer Support</h3>
+<p>We are always ready to help customers.</p>
+</div>
+
+</div>
+</section>
+
+<section id="reviews">
+<div class="section-title">
+<h2>WHAT OUR CUSTOMERS SAY</h2>
+</div>
+
+<div class="reviews">
+
+<div class="review-card">
+<p>
+"The chickens are always fresh and healthy. Highly recommended!"
+</p>
+<h4>— Chikondi K.</h4>
+</div>
+
+<div class="review-card">
+<p>
+"Great service and fast delivery every time."
+</p>
+<h4>— Innocent M.</h4>
+</div>
+
+<div class="review-card">
+<p>
+"Best broiler chickens in Malawi with affordable prices."
+</p>
+<h4>— Memory T.</h4>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-title">
+<h2 style="color:white;">CONTACT US</h2>
+</div>
+
+<h3>Phone Number</h3>
+<p>+265 883 689 015</p>
+
+<br><br>
+
+<h3>Follow Us</h3>
+
+<div class="socials">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 CBN'S POULTRY | All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/265883689015" class="float-whatsapp">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+</body>
+</html>
+```
